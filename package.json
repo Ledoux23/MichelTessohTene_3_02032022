@@ -1,0 +1,19 @@
+{
+  "name": "micheltessohtene_3_02032022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/styleohmyfood.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ledoux23/MichelTessohTene_3_02032022.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ledoux23/MichelTessohTene_3_02032022/issues"
+  },
+  "homepage": "https://github.com/Ledoux23/MichelTessohTene_3_02032022#readme"
+}
