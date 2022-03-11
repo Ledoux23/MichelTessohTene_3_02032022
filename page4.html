@@ -12,100 +12,104 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/7f9313fe4b.js" crossorigin="anonymous"></script>
-    <title>Ohmyfood!</title>
+    <title>ohmyfood</title>
 </head>
 
 <html>
     <body>
-        <header class="heading">
-            <h1 class="heading__title"><img src="images/ohmyfood.png" alt="logo ohmyfood"/></h1>
-            <div class="heading__image">
-                <img src="images/le-délice-des-sens.jpg" alt="Le délice des sens"/>
-            </div>
-            
+        <header class="header">
+            <div class="header__link"><a href="home.html"><i class="fa-solid fa-arrow-left"></i></a></div>
+            <h1 class="header__logo"><img src="images/ohmyfood.png" alt="logo ohmyfood"/></h1>   
         </header>
 
-        <main class="resto resto--border">
+        <main class="container">
 
-            <h2 class="resto__title resto__title--font">Le délice des sens</h2>
+            <div class="resto__image"><img src="images/le-délice-des-sens.jpg" alt="Le délice des sens"/></div>
 
-            <section class="resto__menu">
+            <div class="resto resto--border">
 
-                <h3 class="resto__menu__title">ENTRÉES</h3>
+                <h2 class="resto__title resto__title--font">Le délice des sens</h2>
 
-                <article class="resto__menu__dish">
-                    <h4>Tartare de thon</h4>      
-                    <p>Assaisonné au yuzu 25€</p>
-                </article>
+                <section class="resto__menu">
 
-                <article class="resto__menu__dish">
-                    <h4>Bouchée de homard croustillant</h4>           
-                    <p>Et sa farandole de petits légumes 35€</p>
-                </article>
+                    <h3 class="resto__menu__title">ENTRÉES</h3>
 
-                <article class="resto__menu__dish">
-                    <h4>Velouté de cèpes</h4>           
-                    <p>Aux truffes 20€</p>
-                </article>
+                    <article class="resto__menu__dish">
+                        <h4>Tartare de thon</h4>      
+                        <p>Assaisonné au yuzu 25€</p>
+                    </article>
 
-            </section>
+                    <article class="resto__menu__dish">
+                        <h4>Bouchée de homard croustillant</h4>           
+                        <p>Et sa farandole de petits légumes 35€</p>
+                    </article>
 
-            <section class="resto__menu">
+                    <article class="resto__menu__dish">
+                        <h4>Velouté de cèpes</h4>           
+                        <p>Aux truffes 20€</p>
+                    </article>
 
-                <h3 class="resto__menu__title">PLATS</h3>
+                </section>
 
-                <article class="resto__menu__dish">
-                    <h4>Poulet rôti aux herbes de Provence</h4>                
-                    <p>Et sa crème de truffe 40€</p>
-                </article>
+                <section class="resto__menu">
 
-                <article class="resto__menu__dish">
-                    <h4>Langouste rôtie</h4>     
-                    <p>Et ses légumes de saison 35€</p>
-                </article>
+                    <h3 class="resto__menu__title">PLATS</h3>
 
-                <article class="resto__menu__dish">
-                    <h4>Côte de boeuf Angus</h4>                         
-                    <p>Et sa purée de panais 44€</p>
-                </article>
+                    <article class="resto__menu__dish">
+                        <h4>Poulet rôti aux herbes de Provence</h4>                
+                        <p>Et sa crème de truffe 40€</p>
+                    </article>
 
-            </section>
+                    <article class="resto__menu__dish">
+                        <h4>Langouste rôtie</h4>     
+                        <p>Et ses légumes de saison 35€</p>
+                    </article>
 
-            <section class="resto__menu">
+                    <article class="resto__menu__dish">
+                        <h4>Côte de boeuf Angus</h4>                         
+                        <p>Et sa purée de panais 44€</p>
+                    </article>
 
-                <h3 class="resto__menu__title">DESSERTS</h3>
+                </section>
 
-                <article class="resto__menu__dish">
-                    <h4>Farandole de desserts</h4>                   
-                    <p>Du chef 18€</p>
-                </article>
+                <section class="resto__menu">
 
-                <article class="resto__menu__dish">
-                    <h4>Crème brulée</h4>                
-                    <p>Revisitée 22€</p>
-                </article>
+                    <h3 class="resto__menu__title">DESSERTS</h3>
 
-                <article class="resto__menu__dish">
-                    <h4>Tiramisu</h4>                            
-                    <p>À la noisette 23€</p>
-                </article>
+                    <article class="resto__menu__dish">
+                        <h4>Farandole de desserts</h4>                   
+                        <p>Du chef 18€</p>
+                    </article>
 
-            </section>
+                    <article class="resto__menu__dish">
+                        <h4>Crème brulée</h4>                
+                        <p>Revisitée 22€</p>
+                    </article>
+
+                    <article class="resto__menu__dish">
+                        <h4>Tiramisu</h4>                            
+                        <p>À la noisette 23€</p>
+                    </article>
+
+                </section>
             
-            <button class="resto__btn">Commander</button>
+                <button class="resto__btn">Commander</button>
+            </div>
 
         </main>
         
-        <footer>
+        <footer class="footer">
 
-            <p class="footer-title">ohmyfood</p>
-
-            <ul class="footer-list">
-                <li>Proposer un restaurant</li>
-                <li>Devenir partenaire</li>
-                <li>Mentions légales</li>
-                <li>Contact</li>
-            </ul>
+            <div class="footer__title">ohmyfood</div>
+            
+            <nav class="footer__nav">
+                <ul>
+                    <li class="footer__nav__link"><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
+                    <li class="footer__nav__link"><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
+                    <li class="footer__nav__link"><a href="#">Mentions légales</a></li>
+                    <li class="footer__nav__link"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
 
         </footer>
 

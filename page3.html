@@ -12,100 +12,104 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/7f9313fe4b.js" crossorigin="anonymous"></script>
-    <title>Ohmyfood!</title>
+    <title>ohmyfood</title>
 </head>
 
 <html>
     <body>
-        <header class="heading">
-            <h1 class="heading__title"><img src="images/ohmyfood.png" alt="logo ohmyfood"/></h1>
-            <div class="heading__image">
-                <img src="images/à-la-française.jpg" alt="À la française"/>
-            </div>
-            
+        <header class="header">
+            <div class="header__link"><a href="home.html"><i class="fa-solid fa-arrow-left"></i></a></div>
+            <h1 class="header__logo"><img src="images/ohmyfood.png" alt="logo ohmyfood"/></h1>   
         </header>
 
-        <main class="resto resto--border">
+        <main class="container">
 
-            <h2 class="resto__title resto__title--font">À la française</h2>
+            <div class="resto__image"><img src="images/à-la-française.jpg" alt="À la française"/></div>
 
-            <section class="resto__menu">
+            <div class="resto resto--border">
 
-                <h3 class="resto__menu__title">ENTRÉES</h3>
+                <h2 class="resto__title resto__title--font">À la française</h2>
 
-                <article class="resto__menu__dish">
-                    <h4>Tartare de poulpe acidulé</h4>     
-                    <p>Aux zestes d'orange 25€</p>
-                </article>
+                <section class="resto__menu">
 
-                <article class="resto__menu__dish">
-                    <h4>Velouté de légumes d'antan</h4>    
-                    <p>Carotte, panais, topinambour 35€</p>
-                </article>
+                    <h3 class="resto__menu__title">ENTRÉES</h3>
 
-                <article class="resto__menu__dish">
-                    <h4>Soupe à l'oignon</h4>       
-                    <p>Revisitée 20€</p>
-                </article>
+                    <article class="resto__menu__dish">
+                        <h4>Tartare de poulpe acidulé</h4>     
+                        <p>Aux zestes d'orange 25€</p>
+                    </article>
 
-            </section>
+                    <article class="resto__menu__dish">
+                        <h4>Velouté de légumes d'antan</h4>    
+                        <p>Carotte, panais, topinambour 35€</p>
+                    </article>
 
-            <section class="resto__menu">
+                    <article class="resto__menu__dish">
+                        <h4>Soupe à l'oignon</h4>       
+                        <p>Revisitée 20€</p>
+                    </article>
 
-                <h3 class="resto__menu__title">PLATS</h3>
+                </section>
 
-                <article class="resto__menu__dish">
-                    <h4>Coquilles Saint-Jacques</h4>           
-                    <p>Accompagnées d'une purée de panais 40€</p>
-                </article>
+                <section class="resto__menu">
 
-                <article class="resto__menu__dish">
-                    <h4>Magret de canard</h4>
-                    <p>Et parmentier de pommes de terre 35€</p>
-                </article>
+                    <h3 class="resto__menu__title">PLATS</h3>
 
-                <article class="resto__menu__dish">
-                    <h4>Pigeonneau d’Ille-et-Vilaine</h4>                  
-                    <p>Sur son lit de gnocchis aux légumes 44€</p>
-                </article>
+                    <article class="resto__menu__dish">
+                        <h4>Coquilles Saint-Jacques</h4>           
+                        <p>Accompagnées d'une purée de panais 40€</p>
+                    </article>
 
-            </section>
+                    <article class="resto__menu__dish">
+                        <h4>Magret de canard</h4>
+                        <p>Et parmentier de pommes de terre 35€</p>
+                    </article>
 
-            <section class="resto__menu">
+                    <article class="resto__menu__dish">
+                        <h4>Pigeonneau d’Ille-et-Vilaine</h4>                  
+                        <p>Sur son lit de gnocchis aux légumes 44€</p>
+                    </article>
 
-                <h3 class="resto__menu__title">DESSERTS</h3>
+                </section>
 
-                <article class="resto__menu__dish">
-                    <h4>Pétales de violettes glacés</h4>             
-                    <p>Et purée de noisettes 18€</p>
-                </article>
+                <section class="resto__menu">
 
-                <article class="resto__menu__dish">
-                    <h4>Fondant au chocolat</h4>            
-                    <p>Revisité 22€</p>
-                </article>
+                    <h3 class="resto__menu__title">DESSERTS</h3>
 
-                <article class="resto__menu__dish">
-                    <h4>Millefeuille croustillant</h4>                      
-                    <p>Myrtilles et pâte d’amande 23€</p>
-                </article>
+                    <article class="resto__menu__dish">
+                        <h4>Pétales de violettes glacés</h4>             
+                        <p>Et purée de noisettes 18€</p>
+                    </article>
 
-            </section>
+                    <article class="resto__menu__dish">
+                        <h4>Fondant au chocolat</h4>            
+                        <p>Revisité 22€</p>
+                    </article>
+
+                    <article class="resto__menu__dish">
+                        <h4>Millefeuille croustillant</h4>                      
+                        <p>Myrtilles et pâte d’amande 23€</p>
+                    </article>
+
+                </section>
             
-            <button class="resto__btn">Commander</button>
+                <button class="resto__btn">Commander</button>
+            </div>
 
         </main>
         
-        <footer>
+        <footer class="footer">
 
-            <p class="footer-title">ohmyfood</p>
-
-            <ul class="footer-list">
-                <li>Proposer un restaurant</li>
-                <li>Devenir partenaire</li>
-                <li>Mentions légales</li>
-                <li>Contact</li>
-            </ul>
+            <div class="footer__title">ohmyfood</div>
+            
+            <nav class="footer__nav">
+                <ul>
+                    <li class="footer__nav__link"><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
+                    <li class="footer__nav__link"><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
+                    <li class="footer__nav__link"><a href="#">Mentions légales</a></li>
+                    <li class="footer__nav__link"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
 
         </footer>
 

@@ -1,0 +1,21 @@
+.heading-block {
+    & form {
+        width: 100%;
+        @include box-shadow-form;
+        @include padding;
+        background-color: $color-input;
+        & i {
+            padding-right: 20px;
+        }
+        & input {
+            background-color: $color-input; 
+            border: none;
+            &::placeholder {
+                opacity: 0.8;
+                font-family: 'Roboto', sans-serif;
+                font-weight: bold;
+                font-size: $font-normal;
+            }
+        }
+    }
+}

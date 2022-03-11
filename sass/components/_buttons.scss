@@ -1,0 +1,13 @@
+
+.btn {
+    @include padding;
+    font-size: $font-normal;
+    font-weight: bold;
+    color: $color-fifth;
+    background: $color-scondary;
+    border: none;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
