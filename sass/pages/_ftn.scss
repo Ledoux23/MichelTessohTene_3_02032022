@@ -1,5 +1,5 @@
 .ftn {
-    padding: 30px 0px;
+    @include padding-large;
     background: $color-fifth;
     border: solid 1px blue;
     &__nav {
