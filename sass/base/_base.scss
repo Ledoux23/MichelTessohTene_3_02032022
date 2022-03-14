@@ -8,8 +8,8 @@ body {
     font-family: 'roboto', sans-serif;
 }
 
-h1, h2 {
-    font-size: 28px;
+h2 {
+    font-size: map-get($font-size, h2);
 }
 
 a {

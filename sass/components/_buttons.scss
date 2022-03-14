@@ -1,13 +1,16 @@
 
 .btn {
     @include padding;
-    font-size: $font-normal;
+    font-size: map-get($font-size, btn);
     font-weight: bold;
     color: $color-fifth;
-    background: $color-scondary;
+    background: $color-primary;
     border: none;
     text-decoration: none;
     border-radius: 50px;
     margin-bottom: 60px;
     margin-top: 40px;
+    &:hover {
+        background: lighten($color: $color-primary, $amount: 10)
+    }
 }

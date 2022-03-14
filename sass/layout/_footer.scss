@@ -1,15 +1,15 @@
 .footer {
     background-color: rgb(53, 52, 52);
     @include padding-large;
-    &__title {
-        font-size: 30px;
+    &__heading {
+        font-size: map-get($font-size, footer-heading);
         font-weight: bolder;
         color: $color-fifth;
         font-family: Shrikhand, sans-serif;
         padding-bottom: 15px;
     }
     &__nav {
-        font-size: 16px;
+        font-size: map-get($font-size, footer-nav);
         font-weight: bold;
         & ul {
             padding: 0px;

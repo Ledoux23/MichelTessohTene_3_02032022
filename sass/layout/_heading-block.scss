@@ -6,8 +6,9 @@
     text-align: center;
     & h1 {
         margin-top: 50px;
+        font-size: map-get($font-size, h1);
         &+p {
-            font-size: 22px;
+            font-size: map-get($font-size, heading-block-p);
             margin: 0px;
         }
     }
