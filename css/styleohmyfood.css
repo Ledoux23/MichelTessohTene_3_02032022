@@ -9,12 +9,32 @@ body {
   font-family: "roboto", sans-serif;
 }
 
-h2 {
-  font-size: 28px;
-}
-
 a {
   text-decoration: none;
+}
+
+.resto__menu {
+  border: 1px solid blue;
+}
+.resto__menu__heading {
+  font-size: 28px;
+  font-weight: normal;
+  padding-left: 20px;
+}
+.resto__menu__dish {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  border: 1px solid blue;
+}
+.resto__menu__dish span {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  font-weight: bold;
 }
 
 .btn {
@@ -131,6 +151,34 @@ a {
   background-color: #F2F2F2;
   margin: 0px;
   padding: 40px;
+}
+.resto__image {
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.resto__image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.resto--border {
+  border-radius: 90px 90px 0 0;
+  margin-top: -150px;
+  position: relative;
+  z-index: 2;
+}
+.resto__heading {
+  font-size: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+.resto__heading i {
+  padding-right: 30px;
+}
+.resto__heading--font {
+  font-family: Shrikhand, sans-serif;
 }
 .resto__card {
   width: 100%;

@@ -2,6 +2,34 @@
     background-color: $color-fourth;
     margin: 0px;
     @include padding-large;
+    &__image {
+        height: 500px;
+        position: relative;
+        overflow: hidden; 
+        z-index: 1;
+        & img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;  
+        }
+    } 
+    &--border {
+        border-radius: 90px 90px 0 0;
+        margin-top: -150px;
+        position: relative;
+        z-index: 2;
+    }
+    &__heading {
+        font-size: map-get($font-size, resto-heading);
+        display: flex;
+        justify-content: space-between;
+        & i {
+            padding-right: 30px;
+        }
+        &--font {
+            font-family: Shrikhand, sans-serif;
+        }
+    }
     &__card {
         width: 100%;
         height: 400px;
