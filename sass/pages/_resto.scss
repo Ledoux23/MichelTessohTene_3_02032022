@@ -1,35 +1,7 @@
 .resto {
     background-color: $color-fourth;
     margin: 0px;
-    @include padding-large;
-    &__image {
-        height: 500px;
-        position: relative;
-        overflow: hidden; 
-        z-index: 1;
-        & img {
-            object-fit: cover;
-            height: 100%;
-            width: 100%;  
-        }
-    } 
-    &--border {
-        border-radius: 90px 90px 0 0;
-        margin-top: -150px;
-        position: relative;
-        z-index: 2;
-    }
-    &__heading {
-        font-size: map-get($font-size, resto-heading);
-        display: flex;
-        justify-content: space-between;
-        & i {
-            padding-right: 30px;
-        }
-        &--font {
-            font-family: Shrikhand, sans-serif;
-        }
-    }
+    @include padding-large; 
     &__card {
         width: 100%;
         height: 400px;
@@ -38,6 +10,9 @@
         margin-bottom: 30px;
         background-color: $color-fifth;
         box-shadow: 0px 3px 3px #F2F2F2;
+        &:hover i {
+            color: $color-primary; // remplir le far-heart en :hover et non seulement ses contours = utiliser le pseudoélément ::after
+        }
         &__image {
             height: 300px;
             position: relative;

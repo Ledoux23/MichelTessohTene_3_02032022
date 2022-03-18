@@ -16,6 +16,9 @@
             &:hover {
                 background: lighten($color: $color-primary, $amount: 35)
             }
+            &:hover i {
+                color: $color-primary;
+            }
         }
     }
     ol {
