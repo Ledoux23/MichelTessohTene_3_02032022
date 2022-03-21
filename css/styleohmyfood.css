@@ -1,4 +1,20 @@
 /*a list*/
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes hp {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -94,6 +110,7 @@ body a {
   border-radius: 50px;
   margin-bottom: 60px;
   margin-top: 40px;
+  cursor: pointer;
   box-shadow: inset 0 0 3px #9356DC;
   transition: background-color 400ms, box-shadow 400ms;
 }
@@ -101,8 +118,10 @@ body a {
   background: #ae80e5;
   box-shadow: inset 2px 2px 3px #9356DC;
 }
-.btn__resto {
-  border: 1px solid red;
+
+.btn-resto {
+  display: flex;
+  justify-content: center;
 }
 
 .header {
@@ -215,6 +234,28 @@ body a {
   padding-right: 5px;
 }
 
+.loading-spinner {
+  border-top: 20px solid #9356DC;
+  border-bottom: 20px solid #FF79DA;
+  border-left: 20px solid #99E2D0;
+  border-right: 20px solid #F2F2F2;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  animation: spin 2000ms ease-in-out 300ms infinite both;
+  /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+}
+
+.home-page {
+  animation: hp 0ms 2600ms both;
+}
+
 .resto {
   background-color: #F2F2F2;
   margin: 0px;
@@ -229,8 +270,9 @@ body a {
   background-color: #fff;
   box-shadow: 0px 3px 3px #F2F2F2;
 }
-.resto__card:hover i {
+.resto__card:hover :nth-child(2) i {
   color: #9356DC;
+  opacity: 1;
 }
 .resto__card__image {
   height: 300px;
@@ -261,12 +303,26 @@ body a {
   padding: 20px;
   font-size: 24px;
 }
+.resto__card__txt--anim {
+  position: relative;
+}
+.resto__card__txt--anim :nth-child(1) {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  opacity: 1;
+  padding-right: 20px;
+}
+.resto__card__txt--anim :nth-child(2) {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  opacity: 0;
+  transition: opacity 400ms;
+  padding-right: 20px;
+}
 .resto__card__txt strong {
   font-weight: bold;
-}
-.resto__card__txt i {
-  padding-right: 10px;
-  font-size: 24px;
 }
 
 .ftn {

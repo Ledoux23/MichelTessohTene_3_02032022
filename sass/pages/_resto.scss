@@ -10,8 +10,9 @@
         margin-bottom: 30px;
         background-color: $color-fifth;
         box-shadow: 0px 3px 3px #F2F2F2;
-        &:hover i {
+        &:hover :nth-child(2) i {
             color: $color-primary; // remplir le far-heart en :hover et non seulement ses contours = utiliser le pseudoélément ::after
+            opacity: 1;
         }
         &__image {
             height: 300px;
@@ -41,12 +42,26 @@
             justify-content: space-between;
             @include padding;
             font-size: map-get($font-size, resto-txt);
+            &--anim {
+                position: relative;
+                & :nth-child(1) {
+                    position: absolute;
+                    right: 0px;
+                    top: 0px;
+                    opacity: 1;
+                    padding-right: 20px;
+                }
+                & :nth-child(2) {
+                    position: absolute;
+                    right: 0px;
+                    top: 0px;
+                    opacity: 0;
+                    transition: opacity 400ms;
+                    padding-right: 20px;
+                }
+            }
             & strong {
                 font-weight: bold;
-            }
-            & i {
-                padding-right: 10px;
-                font-size: map-get($font-size, resto-txt);
             }
         }
     }

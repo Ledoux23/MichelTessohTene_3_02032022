@@ -1,0 +1,20 @@
+.loading-spinner {
+    border-top: 20px solid $color-primary;
+    border-bottom: 20px solid $color-secondary;
+    border-left: 20px solid $color-tertiary;
+    border-right: 20px solid $color-fourth;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    animation: spin $spin-dur ease-in-out $spin-delay infinite both;
+    /*animation: name duration timing-function delay iteration-count direction fill-mode;*/
+}
+
+
+

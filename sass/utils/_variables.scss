@@ -8,3 +8,6 @@ $heading-shadow-size: 0px 6px 6px;
 
 $padding-dimensions: 20px 20px 20px 20px; /*a list*/
 
+$spin-dur: 2000ms;
+$spin-delay: 300ms;
+$hp-delay: $spin-dur + $spin-delay*2;
