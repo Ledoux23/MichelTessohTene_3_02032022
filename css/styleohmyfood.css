@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*a list*/
 @keyframes spin {
   0% {
@@ -9,10 +10,18 @@
 }
 @keyframes hp {
   0% {
-    transform: translateX(-9999px);
+    transform: translateX(200%);
   }
   100% {
     transform: translateX(0);
+  }
+}
+@keyframes progress-menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 * {
@@ -47,10 +56,32 @@ body a {
 .resto-prev__heading i {
   padding-right: 30px;
 }
+.resto-prev__menu {
+  position: relative;
+}
+.resto-prev__menu--anim-1 {
+  animation: progress-menu 2000ms 300ms ease-in-out both;
+}
+.resto-prev__menu--anim-2 {
+  animation: progress-menu 2000ms 2300ms ease-in-out both;
+}
+.resto-prev__menu--anim-3 {
+  animation: progress-menu 2000ms 4300ms ease-in-out both;
+}
 .resto-prev__menu__heading {
   font-size: 28px;
   font-weight: normal;
   padding: 20px;
+}
+.resto-prev__menu__line {
+  border: 3px solid #99E2D0;
+  background-color: #99E2D0;
+  width: 67px;
+  height: 3px;
+  position: absolute;
+  top: 60px;
+  left: 22px;
+  z-index: 4;
 }
 .resto-prev__menu__dish {
   display: flex;
@@ -61,42 +92,16 @@ body a {
   box-shadow: 0px 3px 3px #F2F2F2;
   background-color: #fff;
   overflow: hidden;
+  height: 110px;
 }
-.resto-prev__menu__dish:hover :nth-child(2) {
-  transform: translate(0);
+.resto-prev__menu__dish:hover .menu-set__price {
+  transform: translateX(0);
 }
-.resto-prev__menu__dish:hover :nth-child(2) i {
+.resto-prev__menu__dish:hover .menu-set__check {
+  transform: translateX(0);
+}
+.resto-prev__menu__dish:hover .menu-set__check i {
   transform: rotate(0) scale(2);
-}
-.resto-prev__menu__dish__set:nth-child(1) {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex: 4;
-  padding-right: 20px;
-  margin: 20px 0 20px 20px;
-}
-.resto-prev__menu__dish__set:nth-child(1) strong {
-  font-weight: bold;
-}
-.resto-prev__menu__dish__set:nth-child(1) span {
-  font-weight: bold;
-}
-.resto-prev__menu__dish__check:nth-child(2) {
-  flex: 1;
-  border-radius: 0 20px 20px 0;
-  background-color: #99E2D0;
-  position: relative;
-  transform: translateX(100%);
-  transition: transform 500ms ease-in-out;
-}
-.resto-prev__menu__dish__check:nth-child(2) i {
-  color: #fff;
-  position: absolute;
-  top: 40%;
-  left: 40%;
-  transform: rotate(-1turn) scale(1);
-  transition: transform 500ms ease-in-out 100ms;
 }
 
 .btn {
@@ -110,6 +115,7 @@ body a {
   border-radius: 50px;
   margin-bottom: 60px;
   margin-top: 40px;
+  width: 265px;
   cursor: pointer;
   box-shadow: inset 0 0 3px #9356DC;
   transition: background-color 400ms, box-shadow 400ms;
@@ -122,6 +128,48 @@ body a {
 .btn-resto {
   display: flex;
   justify-content: center;
+}
+
+.menu-name {
+  margin: 20px 0 20px 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 465px;
+  line-height: 1.5;
+}
+.menu-name span {
+  font-weight: bold;
+}
+
+.menu-set {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+}
+.menu-set__price {
+  font-weight: bold;
+  padding: 20px;
+  display: flex;
+  align-self: flex-end;
+  transform: translateX(130%);
+  transition: transform 400ms ease-in-out;
+}
+.menu-set__check {
+  background-color: #99E2D0;
+  position: relative;
+  width: 130px;
+  transform: translateX(100%);
+  transition: transform 400ms ease-in-out;
+}
+.menu-set__check i {
+  display: inline-block;
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: rotate(-1turn) scale(1);
+  transition: transform 400ms ease-in-out 100ms;
 }
 
 .header {
@@ -302,6 +350,10 @@ body a {
   justify-content: space-between;
   padding: 20px;
   font-size: 24px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  /*revoir la disposition des éléments html pour qu'il fonctionne*/
 }
 .resto__card__txt--anim {
   position: relative;
@@ -333,13 +385,18 @@ body a {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 40px;
-  padding: 30px 0;
+  padding: 30px 30px 30px 0;
   box-shadow: 0px 6px 6px #bfbfbf;
   border-radius: 30px;
+  height: 95px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .ftn__nav__link i {
-  padding-right: 20px;
-  padding-left: 25px;
+  padding-right: 50px;
+  padding-left: 50px;
+  width: 74px;
 }
 .ftn__nav__link:hover {
   background: #f2eafb;
@@ -362,6 +419,7 @@ body a {
   display: inline-block;
   border-radius: 60%;
   justify-content: center;
+  position: fixed;
 }
 .ftn ol li {
   counter-increment: li;

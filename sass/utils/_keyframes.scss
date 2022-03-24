@@ -9,9 +9,18 @@
 
 @keyframes hp {
     0% {
-        transform: translateX(-9999px);
+        transform: translateX(200%);
     }
     100% {
         transform: translateX(0);
+    }
+}
+
+@keyframes progress-menu {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

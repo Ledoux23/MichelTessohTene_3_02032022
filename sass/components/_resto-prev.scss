@@ -16,10 +16,30 @@
         }
     }
     &__menu {
+        position: relative;
+        &--anim-1 {
+            animation: progress-menu $propress-menu-dur $propress-menu-delay ease-in-out both;
+        }
+        &--anim-2 {
+            animation: progress-menu $propress-menu-dur $propress-menu-delay2 ease-in-out both;
+        }
+        &--anim-3 {
+            animation: progress-menu $propress-menu-dur $propress-menu-delay3 ease-in-out both;
+        }
         &__heading {
             font-size: map-get($font-size, menu-heading);
             font-weight: normal;
             padding: 20px;
+        }
+        &__line {
+            border: 3px solid $color-tertiary;
+            background-color: $color-tertiary;
+            width: 67px;
+            height: 3px;
+            position: absolute;
+            top: 60px;
+            left: 22px;
+            z-index: 4;
         }
         &__dish {
             display: flex;
@@ -30,41 +50,15 @@
             box-shadow: 0px 3px 3px $color-fourth;
             background-color: $color-fifth;
             overflow: hidden;
-            &:hover :nth-child(2) {
-                transform: translate(0);
+            height: 110px; 
+            &:hover .menu-set__price {
+                transform: translateX(0);
             }
-            &:hover :nth-child(2) i {
+            &:hover .menu-set__check {
+                transform: translateX(0);
+            }
+            &:hover .menu-set__check i {
                 transform: rotate(0) scale(2);
-            }
-            &__set:nth-child(1) {
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-end;
-                flex: 4;
-                padding-right: 20px;
-                margin: 20px 0 20px 20px;
-                & strong {
-                    font-weight: bold;
-                }
-                & span {
-                   font-weight: bold; 
-                }
-            }
-            &__check:nth-child(2) { 
-                flex: 1;
-                border-radius: 0 20px 20px 0;
-                background-color: $color-tertiary;
-                position: relative;
-                transform: translateX(100%);
-                transition: transform 500ms ease-in-out;
-                & i {
-                    color: $color-fifth;
-                    position: absolute;
-                    top: 40%;
-                    left: 40%;
-                    transform: rotate(-1turn) scale(1);
-                    transition: transform 500ms ease-in-out 100ms;
-                }
             }
         }
     }
