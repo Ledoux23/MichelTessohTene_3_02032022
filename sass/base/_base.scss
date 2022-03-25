@@ -6,6 +6,12 @@ body {
     max-width: 767px;
     margin: 0px auto;
     font-family: 'roboto', sans-serif;
+    @include tablet-only {
+        max-width: map-get($breakpoints, tablet-max);
+    }
+    @include desktop-only {
+        max-width: map-get($breakpoints, desktop-max);
+    }
     & a {
         text-decoration: none;
         color: initial;

@@ -17,6 +17,10 @@
         & ul {
             padding: 0px;
             margin: 0%;
+            @include tablet-only {
+                display: flex;
+                justify-content: space-between;
+            }
         }
         &__link {
             padding: 5px 0;

@@ -1,4 +1,4 @@
-$font-size: (               /*a map*/
+$font-size: ( 
     footer-heading:30px, 
     h1:30px, 
     resto-heading:28px, 
@@ -10,4 +10,11 @@ $font-size: (               /*a map*/
     input-txt-placeholder:18px, 
     btn:18px,
     footer-nav:18px
+    );
+
+$breakpoints: (
+    tablet-min:768px,
+    tablet-max:991px,
+    desktop-min:992px,
+    desktop-max:1199px
     );
