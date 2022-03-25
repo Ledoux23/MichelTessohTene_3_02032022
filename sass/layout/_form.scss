@@ -1,0 +1,21 @@
+.heading-block {
+    & form {
+        width: 100%;
+        @include heading-shadow($shadow-size: $heading-shadow-size inset);
+        @include padding;
+        background-color: darken($color: $color-fourth, $amount: 10);
+        & i {
+            padding-right: 20px;
+        }
+        & input {
+            background-color: darken($color: $color-fourth, $amount: 10); 
+            border: none;
+            &::placeholder {
+                opacity: 0.8;
+                font-family: 'Roboto', sans-serif;
+                font-weight: bold;
+                font-size: map-get($font-size, input-txt-placeholder);
+            }
+        }
+    }
+}

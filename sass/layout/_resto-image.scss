@@ -1,0 +1,13 @@
+.resto-image {
+    position: relative;
+    overflow: hidden; 
+    z-index: 1;
+    height: 500px;
+    & img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;  
+    }
+}
+
+

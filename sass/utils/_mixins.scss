@@ -1,0 +1,9 @@
+@mixin padding {
+    padding: 20px;
+}
+@mixin padding-large {
+    padding: 40px;
+}
+@mixin heading-shadow($color: $color-fourth, $shadow-size: $heading-shadow-size) {
+    box-shadow: $shadow-size darken($color, 20%);
+}
