@@ -1,6 +1,14 @@
 .ftn {
     @include padding-large;
     background: $color-fifth;
+    @include desktop-only {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 50%;    
+        padding-top: 0px;
+        background-color: $color-fourth;
+    }
     &__nav {
         &__link {
             font-size: map-get($font-size, ftn-nav-link);
@@ -13,6 +21,9 @@
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
+            @include desktop-only {
+                margin-bottom: 10px;
+            }
             & i {
                 padding-right: 50px;
                 padding-left: 50px;
