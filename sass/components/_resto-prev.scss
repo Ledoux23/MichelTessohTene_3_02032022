@@ -5,6 +5,10 @@
     position: relative;
     z-index: 3;
     padding: 40px;
+    @include desktop-only {
+        transform: translateY(400px);
+        margin-top: -400px;
+    }
     &__heading {
         font-size: map-get($font-size, resto-heading);
         font-family: Shrikhand, sans-serif;

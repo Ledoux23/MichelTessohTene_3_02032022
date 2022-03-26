@@ -59,6 +59,12 @@ body h2 {
   z-index: 3;
   padding: 40px;
 }
+@media screen and (min-width: 992px) {
+  .resto-prev {
+    transform: translateY(400px);
+    margin-top: -400px;
+  }
+}
 .resto-prev__heading {
   font-size: 30px;
   font-family: Shrikhand, sans-serif;
@@ -274,6 +280,12 @@ body h2 {
   overflow: hidden;
   z-index: 1;
   height: 500px;
+}
+@media screen and (min-width: 992px) {
+  .resto-image {
+    border-radius: 0 0 90px 90px;
+    height: 400px;
+  }
 }
 .resto-image img {
   object-fit: cover;

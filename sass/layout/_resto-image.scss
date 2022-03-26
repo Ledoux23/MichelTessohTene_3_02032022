@@ -3,6 +3,10 @@
     overflow: hidden; 
     z-index: 1;
     height: 500px;
+    @include desktop-only {
+        border-radius: 0 0 90px 90px;
+        height: 400px;
+    }
     & img {
         object-fit: cover;
         height: 100%;
