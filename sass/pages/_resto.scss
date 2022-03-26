@@ -2,6 +2,9 @@
     background-color: $color-fourth;
     margin: 0px;
     @include padding-large; 
+    @include desktop-only {
+        transform: translateY(400px);
+    }
     &__gp {
         @include tablet-only {
             display: flex;

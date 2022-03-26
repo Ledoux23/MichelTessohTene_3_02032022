@@ -47,6 +47,9 @@ body a {
   text-decoration: none;
   color: initial;
 }
+body h2 {
+  font-size: 30px;
+}
 
 .resto-prev {
   background: #F2F2F2;
@@ -57,7 +60,7 @@ body a {
   padding: 40px;
 }
 .resto-prev__heading {
-  font-size: 28px;
+  font-size: 30px;
   font-family: Shrikhand, sans-serif;
   display: flex;
   justify-content: space-between;
@@ -210,12 +213,23 @@ body a {
   background: #F2F2F2;
   position: relative;
 }
+@media screen and (min-width: 768px) {
+  .container {
+    position: relative;
+  }
+}
 
 .heading-block form {
   width: 100%;
   box-shadow: 0px 6px 6px inset #bfbfbf;
   padding: 20px;
   background-color: #d9d9d9;
+}
+@media screen and (min-width: 992px) {
+  .heading-block form {
+    width: 265px;
+    border-radius: 50px;
+  }
 }
 .heading-block form i {
   padding-right: 20px;
@@ -237,6 +251,14 @@ body a {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+@media screen and (min-width: 992px) {
+  .heading-block {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 50%;
+  }
 }
 .heading-block h1 {
   margin-top: 50px;
@@ -262,6 +284,11 @@ body a {
 .footer {
   background-color: #353434;
   padding: 40px;
+}
+@media screen and (min-width: 992px) {
+  .footer {
+    transform: translateY(400px);
+  }
 }
 .footer__heading {
   font-size: 30px;
@@ -324,6 +351,11 @@ body a {
   background-color: #F2F2F2;
   margin: 0px;
   padding: 40px;
+}
+@media screen and (min-width: 992px) {
+  .resto {
+    transform: translateY(400px);
+  }
 }
 @media screen and (min-width: 768px) {
   .resto__gp {
@@ -409,6 +441,16 @@ body a {
   padding: 40px;
   background: #fff;
 }
+@media screen and (min-width: 992px) {
+  .ftn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    padding-top: 0px;
+    background-color: #F2F2F2;
+  }
+}
 .ftn__nav__link {
   font-size: 24px;
   font-weight: bold;
@@ -420,6 +462,11 @@ body a {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+@media screen and (min-width: 992px) {
+  .ftn__nav__link {
+    margin-bottom: 10px;
+  }
 }
 .ftn__nav__link i {
   padding-right: 50px;

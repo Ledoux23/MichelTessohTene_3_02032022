@@ -1,6 +1,9 @@
 .footer {
     background-color: rgb(53, 52, 52);
     @include padding-large;
+    @include desktop-only {
+        transform: translateY(400px);
+    }
     &__heading {
         font-size: map-get($font-size, footer-heading);
         font-weight: bolder;
