@@ -16,7 +16,7 @@
     transition: background-color 400ms, box-shadow 400ms;
     &:hover {
         background: lighten($color: $color-secondary, $amount: 5);
-        box-shadow: inset 15px 15px 25px lighten($color: $color-primary, $amount: 15) inset;
+        box-shadow: 15px 15px 25px lighten($color: $color-primary, $amount: 15) inset;
     }
 }
 

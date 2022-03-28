@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*a list*/
 @keyframes spin {
   0% {
@@ -19,9 +18,11 @@
 @keyframes progress-menu {
   0% {
     opacity: 0;
+    transform: translateY(100px);
   }
   100% {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 * {
@@ -82,10 +83,10 @@ body h2 {
   animation: progress-menu 2000ms 300ms ease-in-out both;
 }
 .resto-prev__menu--anim-2 {
-  animation: progress-menu 2000ms 2300ms ease-in-out both;
+  animation: progress-menu 2000ms 2000ms ease-in-out both;
 }
 .resto-prev__menu--anim-3 {
-  animation: progress-menu 2000ms 4300ms ease-in-out both;
+  animation: progress-menu 2000ms 4000ms ease-in-out both;
 }
 .resto-prev__menu__heading {
   font-size: 28px;
@@ -141,7 +142,7 @@ body h2 {
 }
 .btn:hover {
   background: #ff93e1;
-  box-shadow: inset 15px 15px 25px #bc95e9 inset;
+  box-shadow: 15px 15px 25px #bc95e9 inset;
 }
 
 .btn-resto {
@@ -243,6 +244,7 @@ body h2 {
 .heading-block form input {
   background-color: #d9d9d9;
   border: none;
+  cursor: pointer;
 }
 .heading-block form input::placeholder {
   opacity: 0.8;
@@ -390,10 +392,6 @@ body h2 {
     width: 48%;
   }
 }
-.resto__card:hover :nth-child(2) i {
-  color: #9356DC;
-  opacity: 1;
-}
 .resto__card__image {
   height: 300px;
   position: relative;
@@ -425,7 +423,6 @@ body h2 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  /*revoir la disposition des éléments html pour qu'il fonctionne*/
 }
 .resto__card__txt--anim {
   position: relative;
@@ -442,8 +439,12 @@ body h2 {
   right: 0px;
   top: 0px;
   opacity: 0;
-  transition: opacity 400ms;
+  transition: opacity 2000ms;
   padding-right: 20px;
+}
+.resto__card__txt--anim :nth-child(2):hover i {
+  color: #9356DC;
+  opacity: 1;
 }
 .resto__card__txt strong {
   font-weight: bold;
