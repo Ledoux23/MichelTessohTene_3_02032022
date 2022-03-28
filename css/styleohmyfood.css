@@ -423,6 +423,7 @@ body h2 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  z-index: 1;
 }
 .resto__card__txt--anim {
   position: relative;
@@ -433,17 +434,19 @@ body h2 {
   top: 0px;
   opacity: 1;
   padding-right: 20px;
+  z-index: 2;
 }
 .resto__card__txt--anim :nth-child(2) {
   position: absolute;
   right: 0px;
   top: 0px;
   opacity: 0;
+  color: #9356DC;
   transition: opacity 2000ms;
   padding-right: 20px;
+  z-index: 3;
 }
-.resto__card__txt--anim :nth-child(2):hover i {
-  color: #9356DC;
+.resto__card__txt--anim :nth-child(2):hover {
   opacity: 1;
 }
 .resto__card__txt strong {
