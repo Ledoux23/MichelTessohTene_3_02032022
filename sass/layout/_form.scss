@@ -14,6 +14,7 @@
         & input {
             background-color: darken($color: $color-fourth, $amount: 10); 
             border: none;
+            cursor: pointer;
             &::placeholder {
                 opacity: 0.8;
                 font-family: 'Roboto', sans-serif;

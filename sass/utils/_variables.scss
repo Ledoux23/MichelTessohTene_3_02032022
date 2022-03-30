@@ -14,5 +14,5 @@ $hp-delay: $spin-dur + $spin-delay*2;
 
 $propress-menu-dur: 2000ms;
 $propress-menu-delay: 300ms;
-$propress-menu-delay2: $propress-menu-dur + $propress-menu-delay;
-$propress-menu-delay3: $propress-menu-dur + $propress-menu-delay2;
+$propress-menu-delay2: $propress-menu-dur;
+$propress-menu-delay3: $propress-menu-dur*2;

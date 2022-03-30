@@ -23,10 +23,6 @@
         @include tablet-only {
             width: 48%;
         }
-        &:hover :nth-child(2) i {
-            color: $color-primary;
-            opacity: 1;
-        }
         &__image {
             height: 300px;
             position: relative;
@@ -57,7 +53,8 @@
             font-size: map-get($font-size, resto-txt);
             overflow: hidden;
             white-space: nowrap;
-            text-overflow: ellipsis; /*revoir la disposition des éléments html pour qu'il fonctionne*/
+            text-overflow: ellipsis;
+            z-index: 1;
             &--anim {
                 position: relative;
                 & :nth-child(1) {
@@ -66,14 +63,20 @@
                     top: 0px;
                     opacity: 1;
                     padding-right: 20px;
+                    z-index: 2;
                 }
                 & :nth-child(2) {
                     position: absolute;
                     right: 0px;
                     top: 0px;
                     opacity: 0;
-                    transition: opacity 400ms;
+                    color: $color-primary;
+                    transition: opacity 2000ms;
                     padding-right: 20px;
+                    z-index: 3;
+                    &:hover {
+                        opacity: 1;
+                    }
                 }
             }
             & strong {
