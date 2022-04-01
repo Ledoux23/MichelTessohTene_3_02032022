@@ -1,0 +1,40 @@
+.footer {
+    background-color: rgb(53, 52, 52);
+    @include padding-large;
+    @include desktop-only {
+        transform: translateY(400px);
+    }
+    &__heading {
+        font-size: map-get($font-size, footer-heading);
+        font-weight: bolder;
+        color: $color-fifth;
+        font-family: Shrikhand, sans-serif;
+        padding-bottom: 15px;
+    }
+    &__nav {
+        font-size: map-get($font-size, footer-nav);
+        font-weight: bold;
+        a {
+            color: white;
+        }
+        & ul {
+            padding: 0px;
+            margin: 0%;
+            @include tablet-only {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        &__link {
+            padding: 5px 0;
+            list-style-type: none;
+            color: $color-fifth;
+            text-decoration: none;
+            & i {
+                width: 30px;
+                padding-right: 5px;
+            }
+        }
+    }
+}
+

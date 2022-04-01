@@ -1,0 +1,7 @@
+.container {
+    background: $color-fourth;
+    position: relative;
+    @include tablet-only {
+        position: relative;
+    }
+}

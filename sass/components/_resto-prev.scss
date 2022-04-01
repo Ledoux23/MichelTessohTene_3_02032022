@@ -1,0 +1,70 @@
+.resto-prev {
+    background: $color-fourth;
+    border-radius: 90px 90px 0 0;
+    margin-top: -90px;
+    position: relative;
+    z-index: 3;
+    padding: 40px;
+    @include desktop-only {
+        transform: translateY(400px);
+        margin-top: -400px;
+    }
+    &__heading {
+        font-size: map-get($font-size, resto-heading);
+        font-family: Shrikhand, sans-serif;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        & i {
+            padding-right: 30px;  
+        }
+    }
+    &__menu {
+        position: relative;
+        &--anim-1 {
+            animation: progress-menu $propress-menu-dur $propress-menu-delay ease-in-out both;
+        }
+        &--anim-2 {
+            animation: progress-menu $propress-menu-dur $propress-menu-delay2 ease-in-out both;
+        }
+        &--anim-3 {
+            animation: progress-menu $propress-menu-dur $propress-menu-delay3 ease-in-out both;
+        }
+        &__heading {
+            font-size: map-get($font-size, menu-heading);
+            font-weight: normal;
+            padding: 20px;
+        }
+        &__line {
+            border: 3px solid $color-tertiary;
+            background-color: $color-tertiary;
+            width: 67px;
+            height: 3px;
+            position: absolute;
+            top: 60px;
+            left: 22px;
+            z-index: 4;
+        }
+        &__dish {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            font-size: map-get($font-size, menu-dish);
+            border-radius: 20px;
+            box-shadow: 0px 3px 3px $color-fourth;
+            background-color: $color-fifth;
+            overflow: hidden;
+            height: 110px; 
+            &:hover .menu-set__price {
+                transform: translateX(0);
+            }
+            &:hover .menu-set__check {
+                transform: translateX(0);
+            }
+            &:hover .menu-set__check i {
+                transform: rotate(0) scale(2);
+            }
+        }
+    }
+}
+

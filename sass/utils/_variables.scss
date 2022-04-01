@@ -1,3 +1,18 @@
 $color-primary: #9356DC;
-$color-scondary: #FF79DA;
+$color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$color-fourth: #F2F2F2;
+$color-fifth: #fff;
+
+$heading-shadow-size: 0px 6px 6px;
+
+$padding-dimensions: 20px 20px 20px 20px; /*a list*/
+
+$spin-dur: 2000ms;
+$spin-delay: 300ms;
+$hp-delay: $spin-dur + $spin-delay*2;
+
+$propress-menu-dur: 2000ms;
+$propress-menu-delay: 300ms;
+$propress-menu-delay2: $propress-menu-dur;
+$propress-menu-delay3: $propress-menu-dur*2;

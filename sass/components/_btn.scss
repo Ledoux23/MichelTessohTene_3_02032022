@@ -1,0 +1,26 @@
+
+.btn {
+    @include padding;
+    font-size: map-get($font-size, btn);
+    font-weight: bold;
+    color: $color-fifth;
+    background: $color-secondary;
+    border: none;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+    width: 265px;
+    cursor: pointer;
+    box-shadow: 10px 10px 30px lighten($color: $color-primary, $amount: 10) inset;
+    transition: background-color 400ms, box-shadow 400ms;
+    &:hover {
+        background: lighten($color: $color-secondary, $amount: 5);
+        box-shadow: 15px 15px 25px lighten($color: $color-primary, $amount: 15) inset;
+    }
+}
+
+.btn-resto {
+    display: flex;
+    justify-content: center;
+}

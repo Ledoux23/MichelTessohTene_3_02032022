@@ -1,2 +1,23 @@
 @import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/maps";
+@import "./utils/mixins";
+@import "./utils/keyframes";
+
 @import "./base/base";
+
+@import "./components/resto-prev";
+@import "./components/btn";
+@import "./components/menu";
+
+@import "./layout/header";
+@import "./layout/container";
+@import "./layout/form";
+@import "./layout/heading-block";
+@import "./layout/resto-image";
+@import "./layout/footer";
+
+@import "./pages/loading-spinner";
+@import "./pages/home-page";
+@import "./pages/resto";
+@import "./pages/ftn";
